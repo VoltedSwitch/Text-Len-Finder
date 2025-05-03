@@ -1,3 +1,6 @@
+import os
+import time
+
 
 def clear_screen(seconds=None):
     if isinstance(seconds, (int, float)):
