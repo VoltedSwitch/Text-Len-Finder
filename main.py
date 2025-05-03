@@ -1,4 +1,4 @@
-from screen_manager import clear_screen
+from screen_manager import clear_screen, hide_cursor, show_cursor
 
 
 def difference_both_lengths(first_t, second_t):
@@ -64,3 +64,6 @@ while True:
         clear_screen()
     else:
         break
+clear_screen()
+print("Thanks for comparing!")
+hide_cursor()
