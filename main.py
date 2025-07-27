@@ -37,7 +37,7 @@ def sentence(difference, text1_len, text2_len):
         return (
             f"Both of your texts are equal in length to each other. The first text is "
             f"{text1_len} {character_or_characters(text1_len)}, while your second text is "
-            f"{text2_len} {character_or_characters(text2_len)} in length, and the difference "
+            f"{text2_len} {character_or_characters(text2_len)} in length, thus the difference "
             f"in length is {difference}."
         )
 
@@ -60,10 +60,10 @@ while True:
     print()
 
     again = input("Try again?(y/n): ").strip().lower()
-    if again == "y":
-        clear_screen()
-    else:
+    clear_screen()
+    
+    if again == "n":
         break
-clear_screen()
+        
 print("Thanks for comparing!")
 hide_cursor()
